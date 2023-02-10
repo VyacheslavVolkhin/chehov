@@ -1,27 +1,64 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="url"] {
-	
+.frm-popup {
+    max-width: 50rem;
+    margin: 0 auto;
+    position: static;
+    .btn {
+        width: 100%;
+    }
+    .frm-field {
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+    .frm-row {
+        display: block;
+        margin: 0 auto;
+        max-width: 45rem;
+    }
+    .frm-row-submit {
+        .frm-field {
+            margin: 0;
+        }
+    }
+    &.frm-succefull {
+        .form-succefull-wrap {
+            display: flex;
+        }
+    }
+    .form-succefull-wrap {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        background: #fff;
+        text-align: center;
+        color: var(--clr-title);
+        animation: fadein ease 0.2s;
+        align-items: center;
+    }
+    .form-text {
+        display: block;
+        width: 100%;
+        max-width: 20em;
+        padding: 0 15px;
+        margin: 0 auto;
+        flex-shrink: 0;
+    }
 }
-textarea {
-	height: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	resize: none;
-}
-.btn,
-button,
-input[type="submit"] {
-	
+.frm-field-cpt {
+    display: block;
+    position: relative;
+    .img-cpt {
+        display: block;
+        width: 326px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 .frm-row,
 .frm-field,
@@ -30,6 +67,10 @@ input[type="submit"] {
     flex-wrap: wrap;
 	position: relative;
 	line-height: 1;
+}
+.frm-field {
+    display: block;
+    width: 100%;
 }
 .frm-select {
 	position: relative;
@@ -55,4 +96,15 @@ input[type="submit"] {
             position: absolute;
         }
 	}
+}
+
+@media (max-width: 639px) {
+    .frm-popup {
+        .frm-row {
+            max-width: inherit;
+        }
+        .frm-field {
+            margin-bottom: 8px;
+        }
+    }
 }
