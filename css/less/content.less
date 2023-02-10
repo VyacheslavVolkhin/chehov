@@ -1250,7 +1250,7 @@ body.popup-open {
     padding: 9.8rem 0 8.5rem 0;
     .title-box {
         .title-decor {
-            background-color: #fff;
+            //background-color: #fff;
         }
     }
     &:before, &:after {
@@ -1427,6 +1427,22 @@ body.popup-open {
     text-align: center;
     padding-top: 6rem;
     margin-bottom: 0;
+}
+body {
+    #swipebox-bottom-bar {
+        bottom: 0;
+        transform: none !important;
+    }
+    #swipebox-top-bar {
+        top: 0;
+        padding: 15px 50px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+        white-space: normal;
+        height: auto;
+        transform: none !important;
+    }
 }
 @media (max-width: 1599px) {
     .main-slider-box {
@@ -1749,6 +1765,10 @@ body.popup-open {
     
 }
 @media (max-width: 479px) {
+    body #swipebox-top-bar {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     .links-box {
         font-size: 12px;
         line-height: 14px;

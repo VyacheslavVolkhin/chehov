@@ -652,6 +652,9 @@ body {
   margin: 30px 0 0 0;
   margin: 3rem 0 0 0;
 }
+.footer .logo-wrap:hover {
+  text-decoration: none;
+}
 .footer .phone-wrap {
   font-size: 28px;
   font-size: 2.8rem;
@@ -771,6 +774,7 @@ body {
 }
 .header-main-panel .logo-text-wrap .logo-text {
   display: block;
+  font-weight: 500;
 }
 .header-main-panel .link-phone {
   display: block;
@@ -834,6 +838,9 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+.popup-menu-wrap li {
+  font-weight: inherit;
 }
 .logo {
   display: block;
@@ -3219,9 +3226,6 @@ body.popup-open {
   padding: 98px 0 85px 0;
   padding: 9.8rem 0 8.5rem 0;
 }
-.main-steps-box .title-box .title-decor {
-  background-color: #fff;
-}
 .main-steps-box:before,
 .main-steps-box:after {
   content: "";
@@ -3426,6 +3430,20 @@ body.popup-open {
   padding-top: 60px;
   padding-top: 6rem;
   margin-bottom: 0;
+}
+body #swipebox-bottom-bar {
+  bottom: 0;
+  transform: none !important;
+}
+body #swipebox-top-bar {
+  top: 0;
+  padding: 15px 50px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  white-space: normal;
+  height: auto;
+  transform: none !important;
 }
 @media (max-width: 1599px) {
   .main-slider-box .photo-inner-wrap {
@@ -3718,6 +3736,10 @@ body.popup-open {
   }
 }
 @media (max-width: 479px) {
+  body #swipebox-top-bar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .links-box {
     font-size: 12px;
     line-height: 14px;
@@ -3905,6 +3927,7 @@ select.form-input:required:invalid {
   font-size: 22px;
   font-size: 2.2rem;
   font-weight: 400;
+  border-width: 1px;
 }
 .btn.button-third {
   border-color: #a9abab;
