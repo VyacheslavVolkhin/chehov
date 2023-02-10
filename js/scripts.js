@@ -195,12 +195,14 @@ $(document).ready(function(){
     //main-slider-box
     if (!!$('.main-slider-box').offset()) {
         $('.main-slider-box .slider').slick({
-            dots: false,
+            
+            dots: true,
             slidesToShow: 1,
             variableWidth: false,
             infinite: true,
             adaptiveHeight: false,
             rows: 1,
+            appendDots: $('#main-dots'),
             swipeToSlide: true,
             autoplay: true,
             autoplaySpeed: 5000,
@@ -216,7 +218,7 @@ $(document).ready(function(){
         $('.main-slider-box').find('.ico-arrow-next').click();
         return false;
     })
-
+    $('.main-slider-box').find('.ico-arrow-next').click();
 
     //pluses-reviews-box
     if (!!$('.pluses-reviews-box').offset()) {

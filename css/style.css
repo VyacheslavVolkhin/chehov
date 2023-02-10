@@ -1994,7 +1994,7 @@ body.popup-open {
   min-height: 66.7rem;
 }
 .project-box .info-inner-wrap:hover:after {
-  background-color: rgba(40, 40, 40, 0.65);
+  background-color: rgba(40, 40, 40, 0.85);
 }
 .project-box .info-inner-wrap:after {
   content: "";
@@ -3304,6 +3304,48 @@ body.popup-open {
   margin-bottom: 98px;
   margin-bottom: 9.8rem;
   position: relative;
+}
+.main-top-box #main-dots {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main-top-box #main-dots .slick-dots,
+.main-top-box #main-dots .slick-dots li,
+.main-top-box #main-dots .slick-dots button {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  pointer-events: none;
+}
+.main-top-box #main-dots .slick-dots:before,
+.main-top-box #main-dots .slick-dots li:before,
+.main-top-box #main-dots .slick-dots button:before {
+  display: none;
+}
+.main-top-box #main-dots .slick-dots button {
+  width: 0;
+  right: auto;
+  transition: none;
+  background-color: #b4b4b4;
+}
+.main-top-box #main-dots .slick-dots li.slick-active button {
+  width: 100%;
+  transition: all ease 5s;
+}
+.main-top-box .inner-wrap {
+  z-index: 2;
 }
 .main-top-box .links-actions-wrap {
   display: -ms-flexbox;
