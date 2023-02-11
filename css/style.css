@@ -2243,6 +2243,20 @@ body.popup-open {
       flex-shrink: 0;
   padding: 100px 0 30px 60px;
   padding: 10rem 0 3rem 6rem;
+  position: relative;
+  z-index: 2;
+}
+.pluses-reviews-box .reviews-inner-wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  width: 900px;
+  background: url(../img/lines.svg) 0 center no-repeat;
+  background-size: 798px auto;
+  opacity: 0.25;
 }
 .pluses-reviews-box .items-wrap {
   margin: 0 -15px -30px -15px;
